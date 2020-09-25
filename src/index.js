@@ -6,7 +6,7 @@
  */
 const Firestore = require('@google-cloud/firestore');
 const PROJECTID = 'equifax-hackathon-2020';
-const COLLECTION_NAME = 'function-test-data';
+const COLLECTION_NAME = 'microservice-data';
 const firestore = new Firestore({
     projectId: PROJECTID,
     timestampsInSnapshots: true,
