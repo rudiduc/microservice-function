@@ -19,7 +19,7 @@ exports.helloPubSub = (event, context) => {
     // store/insert a new document
     const created = new Date().getTime();
     return firestore.collection(COLLECTION_NAME)
-      .add( JSON.parse() )
+      .add( JSON.parse(message) )
       .then(doc => {
         console.log(doc);
       }).catch(err => {
