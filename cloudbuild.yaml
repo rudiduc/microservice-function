@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+  dir: '/'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['functions', 'deploy', 'microservice-function', '--trigger-topic', 'microservice-metadata', '--runtime', 'nodejs10']
+  dir: '/'
