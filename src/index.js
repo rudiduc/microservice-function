@@ -1,8 +1,8 @@
 /**
  * Triggered from a message on a Cloud Pub/Sub topic.
  *
- * @param {!Object} event Event payload.
- * @param {!Object} context Metadata for the event.
+ * @param {!Object} event Event payload
+ * @param {!Object} context Metadata for the event
  */
 const Firestore = require('@google-cloud/firestore');
 const PROJECTID = 'equifax-hackathon-2020';
